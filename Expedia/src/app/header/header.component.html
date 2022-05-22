@@ -1,21 +1,18 @@
-<mat-toolbar color="primary">
+<mat-toolbar color="black">
   <div fxHide.gt-xs>
     <button mat-icon-button (click)="onToggleSidenav()">
       <mat-icon>menu</mat-icon>
     </button>
   </div>
-  <div>
-    <a routerLink="/home">Expedia</a>
-  </div>
-  <div fxFlex fxLayout fxLayoutAlign="end" fxHide.xs>
-    <ul fxLayout fxLayoutGap="15px" class="navigation-items" style="text-align: right" >
-      <li>
-        <a routerLink="/home">Home</a>
-      </li>
-      <li>
-        <a routerLink="/flights">Flights</a>
-      </li>
 
-    </ul>
+  <div id="logo_div">
+    <a href="" > <img id="logo" src="../../assets/images/logo_expe.png"/> </a>
+  </div>
+
+  <div id="nav_bar" fxFlex fxLayout fxLayoutAlign="end" fxHide.xs>
+    <a routerLink="/flights">Flights</a>
+    <a routerLink="/hotels">Hôtels</a>
+    <a routerLink="/voitures">Voitures</a>
+    <a routerLink="/activites">Activités</a>
   </div>
 </mat-toolbar>

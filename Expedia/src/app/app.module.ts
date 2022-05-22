@@ -9,6 +9,9 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { FlightsComponent } from './flights/flights.component';
+import { HotelsComponent } from './hotels/hotels.component';
+import { VoituresComponent } from './voitures/voitures.component';
+import { ActivitesComponent } from './activites/activites.component';
 import {MatToolbarModule} from "@angular/material/toolbar";
 import {MatIconModule} from "@angular/material/icon";
 import {MatSidenavModule} from "@angular/material/sidenav";
@@ -21,7 +24,10 @@ import {ReactiveFormsModule} from "@angular/forms";
     HeaderComponent,
     FooterComponent,
     HomeComponent,
-    FlightsComponent
+    FlightsComponent,
+    HotelsComponent,
+    VoituresComponent,
+    ActivitesComponent
   ],
   imports: [
     HttpClientModule,
