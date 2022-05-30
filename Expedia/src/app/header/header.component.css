@@ -1,9 +1,10 @@
 a {
   text-decoration: none;
   padding: 25px;
+  color: #000a92;
 }
 a:hover, a:active{
-  color: #000a92;
+  color: #4b227e;
 }
 
 .navigation-items{
@@ -24,4 +25,9 @@ mat-toolbar{
   mat-toolbar{
     border-radius: 0px;
   }
+}
+
+#user_navbar{
+  margin-right: 50px;
+  margin-left: auto;
 }

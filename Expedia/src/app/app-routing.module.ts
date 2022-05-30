@@ -5,6 +5,7 @@ import {FlightsComponent} from "./flights/flights.component";
 import {HotelsComponent} from "./hotels/hotels.component";
 import {VoituresComponent} from "./voitures/voitures.component";
 import {ActivitesComponent} from "./activites/activites.component";
+import {UserComponent} from "./user/user.component";
 
 const routes: Routes = [
   {
@@ -31,6 +32,10 @@ const routes: Routes = [
   {
     path: 'activites',
     component: ActivitesComponent
+  },
+  {
+    path: 'user',
+    component: UserComponent
   }
 ];
 
