@@ -12,6 +12,8 @@ import { FlightsComponent } from './flights/flights.component';
 import { HotelsComponent } from './hotels/hotels.component';
 import { VoituresComponent } from './voitures/voitures.component';
 import { ActivitesComponent } from './activites/activites.component';
+import { UserComponent } from './user/user.component';
+import { LoginComponent } from './login/login.component';
 import {MatToolbarModule} from "@angular/material/toolbar";
 import {MatIconModule} from "@angular/material/icon";
 import {MatSidenavModule} from "@angular/material/sidenav";
@@ -27,7 +29,9 @@ import {ReactiveFormsModule} from "@angular/forms";
     FlightsComponent,
     HotelsComponent,
     VoituresComponent,
-    ActivitesComponent
+    ActivitesComponent,
+    UserComponent,
+    LoginComponent
   ],
   imports: [
     HttpClientModule,

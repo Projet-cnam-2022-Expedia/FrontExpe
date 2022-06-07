@@ -1,18 +1,17 @@
-<mat-toolbar color="black">
-  <div fxHide.gt-xs>
-    <button mat-icon-button (click)="onToggleSidenav()">
-      <mat-icon>menu</mat-icon>
-    </button>
-  </div>
+<mat-toolbar>
 
   <div id="logo_div">
-    <a href="" > <img id="logo" src="../../assets/images/logo_expe.png"/> </a>
+    <a href="" > <img id="logo" src="../../assets/images/logo_expe_titre.png"/> </a>
   </div>
 
   <div id="nav_bar" fxFlex fxLayout fxLayoutAlign="end" fxHide.xs>
-    <a routerLink="/flights">Flights</a>
+    <a routerLink="/flights">Vols</a>
     <a routerLink="/hotels">Hôtels</a>
     <a routerLink="/voitures">Voitures</a>
     <a routerLink="/activites">Activités</a>
+  </div>
+
+  <div id="user_navbar">
+    <a routerLink="/login"> <img id="user_icon" src="../../assets/images/user_icon.png"/> </a>
   </div>
 </mat-toolbar>
