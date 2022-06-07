@@ -11,12 +11,15 @@ import {FormControl, FormGroup} from "@angular/forms";
 })
 export class FlightsComponent implements OnInit {
   public data: any = [];
-  displayedColumns: string[] = ['Compagnie', 'Ville de départ', "Ville d'arrivée"];
+  displayedColumns: string[] = ['Compagnie', 'Ville de départ', "Ville d'arrivée", "Date","Prix", "Escale"];
 
   flightsFilter = new FormGroup({
     compagnieName: new FormControl(),
     villeDepart: new FormControl(),
-    villeArrivee: new FormControl()
+    villeArrivee: new FormControl(),
+    Date: new FormControl(),
+    Prix: new FormControl(),
+    Escale: new FormControl()
   })
 
 
