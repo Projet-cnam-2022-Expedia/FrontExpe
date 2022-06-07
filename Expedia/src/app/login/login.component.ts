@@ -5,7 +5,7 @@ import {HttpClient} from "@angular/common/http";
 import {FormControl, FormGroup} from "@angular/forms";
 
 @Component({
-  selector: 'app-hotels',
+  selector: 'app-login',
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
 })

@@ -1,0 +1,22 @@
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  overflow-x: hidden;
+}
+
+.left {
+  left: 0;
+  border-right: black solid 1px;
+}
+
+.right {
+  right: 0;
+}
+
+.centered {
+  height: 100%;
+  height: max-content;
+  text-align: center;
+}
