@@ -11,11 +11,17 @@ import {FormControl, FormGroup} from "@angular/forms";
 })
 export class VoituresComponent implements OnInit {
   public data: any = [];
-  displayedColumns: string[] = ['Nom', 'Ville'];
+  displayedColumns: string[] = ['Marque', 'Modele', 'Killometrage illimite', 'Boite automatique', 'Nombre de places', 'Prix', 'Ville'];
 
   voituresFilter = new FormGroup({
-    nom: new FormControl(),
-    ville: new FormControl()
+    Marque: new FormControl(),
+    Modele: new FormControl(),
+    Killometrage_illimite: new FormControl(),
+    Boite_automatique: new FormControl(),
+    Nombres_de_places: new FormControl(),
+    Prix: new FormControl(),
+    Ville: new FormControl()
+
   })
 
 
@@ -27,8 +33,7 @@ export class VoituresComponent implements OnInit {
   }
 
   getVoitures(): void {
-    console.log('dtfg');
-    const url = 'http://localhost/BackExpe/GetVoitures.php';
+    const url = 'http://localhost/BackExpe/GetLocation.php';
     this.http.get(url).subscribe((test: any) => {
         this.data = test;
       }

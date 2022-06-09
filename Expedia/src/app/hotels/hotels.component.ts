@@ -11,11 +11,18 @@ import {FormControl, FormGroup} from "@angular/forms";
 })
 export class HotelsComponent implements OnInit {
   public data: any = [];
-  displayedColumns: string[] = ['Nom', 'Ville'];
+  displayedColumns: string[] = ['Nom', 'Gym', 'Piscine', 'Spa', 'Bar', 'Internet', 'Nb_places', 'Salledebain_private'];
 
   hotelsFilter = new FormGroup({
-    nom: new FormControl(),
-    ville: new FormControl()
+    Nom: new FormControl(),
+    Gym: new FormControl(),
+    Piscine: new FormControl(),
+    Spa: new FormControl(),
+    Bar: new FormControl(),
+    Internet: new FormControl(),
+    Nb_places: new FormControl(),
+    Salledebain_private: new FormControl()
+
   })
 
 
@@ -27,8 +34,7 @@ export class HotelsComponent implements OnInit {
   }
 
   getHotels(): void {
-    console.log('dtfg');
-    const url = 'http://localhost/BackExpe/GetHotels.php';
+    const url = 'http://localhost/BackExpe/GetChambres.php';
     this.http.get(url).subscribe((test: any) => {
         this.data = test;
       }
