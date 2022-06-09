@@ -1,19 +1,45 @@
 <p>hotels works!</p>
-<form [formGroup]="hotelsFilter" (ngSubmit)="filtre()">
-  <input type="text" formControlName="nom">
 
-  <button type="submit">FILTRAGE</button>
-</form>
 {{this.hotelsFilter.value.name}}
 <table mat-table [dataSource]="this.data" class="mat-elevation-z8">
   <ng-container matColumnDef="Nom">
     <th mat-header-cell *matHeaderCellDef> Nom </th>
-    <td mat-cell *matCellDef="let element">{{element.nom}} </td>
+    <td mat-cell *matCellDef="let element">{{element.Nom}} </td>
   </ng-container>
 
-  <ng-container matColumnDef="Ville">
-    <th mat-header-cell *matHeaderCellDef> Ville </th>
-    <td mat-cell *matCellDef="let element">{{element.ville}} </td>
+  <ng-container matColumnDef="Gym">
+    <th mat-header-cell *matHeaderCellDef> Gym </th>
+    <td mat-cell *matCellDef="let element">{{element.gym}} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="Piscine">
+    <th mat-header-cell *matHeaderCellDef> Piscine </th>
+    <td mat-cell *matCellDef="let element">{{element.piscine}} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="Spa">
+    <th mat-header-cell *matHeaderCellDef> Spa </th>
+    <td mat-cell *matCellDef="let element">{{element.spa}} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="Bar">
+    <th mat-header-cell *matHeaderCellDef> Bar </th>
+    <td mat-cell *matCellDef="let element">{{element.bar}} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="Internet">
+    <th mat-header-cell *matHeaderCellDef> Internet </th>
+    <td mat-cell *matCellDef="let element">{{element.internet}} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="Nb_places">
+    <th mat-header-cell *matHeaderCellDef> Nombre de places </th>
+    <td mat-cell *matCellDef="let element">{{element.nb_places}} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="Salledebain_private">
+    <th mat-header-cell *matHeaderCellDef> Salle de bain private </th>
+    <td mat-cell *matCellDef="let element">{{element.salledebain_private}} </td>
   </ng-container>
 
   <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>

@@ -11,13 +11,13 @@ import {FormControl, FormGroup} from "@angular/forms";
 })
 export class ActivitesComponent implements OnInit {
   public data: any = [];
-  displayedColumns: string[] = ['Nom', 'Type', 'Description', 'Ville'];
+  displayedColumns: string[] = ['Nom', 'Description', 'Lieu', 'Prix'];
 
   activitesFilter = new FormGroup({
-    nom: new FormControl(),
-    type: new FormControl(),
-    description: new FormControl(),
-    ville: new FormControl()
+    Nom: new FormControl(),
+    Description: new FormControl(),
+    Lieu: new FormControl(),
+    Prix: new FormControl()
   })
 
 
