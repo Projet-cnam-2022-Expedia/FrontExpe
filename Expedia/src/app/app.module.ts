@@ -14,6 +14,7 @@ import { VoituresComponent } from './voitures/voitures.component';
 import { ActivitesComponent } from './activites/activites.component';
 import { UserComponent } from './user/user.component';
 import { LoginComponent } from './login/login.component';
+import { User_reservationComponent } from './user_reservation/user_reservation.component';
 import {MatToolbarModule} from "@angular/material/toolbar";
 import {MatIconModule} from "@angular/material/icon";
 import {MatSidenavModule} from "@angular/material/sidenav";
@@ -31,7 +32,8 @@ import {ReactiveFormsModule} from "@angular/forms";
     VoituresComponent,
     ActivitesComponent,
     UserComponent,
-    LoginComponent
+    LoginComponent,
+    User_reservationComponent
   ],
   imports: [
     HttpClientModule,

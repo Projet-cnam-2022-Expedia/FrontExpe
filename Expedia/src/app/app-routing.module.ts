@@ -7,6 +7,7 @@ import {VoituresComponent} from "./voitures/voitures.component";
 import {ActivitesComponent} from "./activites/activites.component";
 import {UserComponent} from "./user/user.component";
 import {LoginComponent} from "./login/login.component";
+import {User_reservationComponent} from "./user_reservation/user_reservation.component";
 
 const routes: Routes = [
   {
@@ -41,6 +42,10 @@ const routes: Routes = [
   {
     path: 'login',
     component: LoginComponent
+  },
+  {
+    path: 'user_reservation',
+    component: User_reservationComponent
   }
 ];
 
