@@ -1,9 +1,14 @@
 <p>hotels works!</p>
-<form [formGroup]="hotelsFilter" (ngSubmit)="filtre()">
-  <input type="text" formControlName="nom">
-
-  <button type="submit">FILTRAGE</button>
-</form>
+<div class="form-group">
+  <div class="search-name">
+    <input class="form-control" type="text" name="search" placeholder=" SEARCH  " [(ngModel)]="searchText" />
+  </div>
+  <div *ngFor="let name of data | HotelFilter: searchText">
+    <li>
+      <span>{{name}}</span>
+    </li>
+  </div>
+</div>
 {{this.hotelsFilter.value.name}}
 <table mat-table [dataSource]="this.data" class="mat-elevation-z8">
   <ng-container matColumnDef="Nom">

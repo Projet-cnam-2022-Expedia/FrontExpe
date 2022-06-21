@@ -7,6 +7,7 @@ import {VoituresComponent} from "./voitures/voitures.component";
 import {ActivitesComponent} from "./activites/activites.component";
 import {UserComponent} from "./user/user.component";
 import {LoginComponent} from "./login/login.component";
+import {TestComponent} from "./test/test.component";
 
 const routes: Routes = [
   {
@@ -41,6 +42,10 @@ const routes: Routes = [
   {
     path: 'login',
     component: LoginComponent
+  },
+  {
+    path: 'test',
+    component: TestComponent
   }
 ];
 

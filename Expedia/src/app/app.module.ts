@@ -18,7 +18,11 @@ import {MatToolbarModule} from "@angular/material/toolbar";
 import {MatIconModule} from "@angular/material/icon";
 import {MatSidenavModule} from "@angular/material/sidenav";
 import {MatTableModule} from "@angular/material/table";
-import {ReactiveFormsModule} from "@angular/forms";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
+/*Ajouts de Sad*/
+import {TestComponent} from './test/test.component';
+import {TestFilterPipe} from "./test/test.pipe";
+import {HotelFilterPipe} from "./hotels/hotelFilter.pipe";
 
 @NgModule({
   declarations: [
@@ -31,20 +35,24 @@ import {ReactiveFormsModule} from "@angular/forms";
     VoituresComponent,
     ActivitesComponent,
     UserComponent,
-    LoginComponent
+    LoginComponent,
+    TestComponent, //Ajouts de Sad
+    TestFilterPipe,
+    HotelFilterPipe
   ],
-  imports: [
-    HttpClientModule,
-    BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
-    MatButtonModule,
-    MatToolbarModule,
-    MatIconModule,
-    MatSidenavModule,
-    MatTableModule,
-    ReactiveFormsModule
-  ],
+    imports: [
+        HttpClientModule,
+        BrowserModule,
+        AppRoutingModule,
+        BrowserAnimationsModule,
+        MatButtonModule,
+        MatToolbarModule,
+        MatIconModule,
+        MatSidenavModule,
+        MatTableModule,
+        ReactiveFormsModule,
+        FormsModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })
