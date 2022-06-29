@@ -15,4 +15,12 @@ export class HeaderComponent implements OnInit {
   public onToggleSidenav = () => {
 
   }
+
+  connect(): boolean{
+    if(localStorage.getItem('connect') == '1'){
+      return true;
+    }else{
+      return false;
+    }
+  }
 }

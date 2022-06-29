@@ -1,5 +1,9 @@
 <p>voitures works!</p>
+<form [formGroup]="voituresFilter" (ngSubmit)="filtre()">
+  <input type="text" formControlName="nom">
 
+  <button type="submit">FILTRAGE</button>
+</form>
 {{this.voituresFilter.value.name}}
 <table mat-table [dataSource]="this.data" class="mat-elevation-z8">
   <ng-container matColumnDef="Marque">

@@ -1,15 +1,16 @@
 <div class="split left">
   <div class="centered">
+    <div class="alert alert-danger" role="alert">{{message}}</div>
     <h1>Connectez-vous</h1>
-    <form action="" method="get" class="form-example">
+    <form #LoginForm="ngForm" method="get" class="form-example" (ngSubmit)="login(LoginForm)">
       <div class="form-example">
         <label for="emailLogin">Email: </label><br>
-        <input type="email" name="email" id="emailLogin" required>
+        <input type="email" name="email" id="emailLogin" ngModel required>
       </div>
 
       <div class="form-example">
         <label for="passwordLogin">Password: </label><br>
-        <input type="password" name="password" id="passwordLogin" required>
+        <input type="password" name="password" id="passwordLogin" ngModel required>
       </div>
 
       <div class="form-example">
@@ -22,25 +23,26 @@
 <div class="split right">
   <div class="centered">
     <h1>Créez un compte</h1>
-    <form action="" method="get" class="form-example">
+    <div class="alert alert-danger" role="alert">{{message2}}</div>
+    <form #signupForm="ngForm" method="get" class="form-example" (ngSubmit)="signUp(signupForm)">
       <div class="form-example">
         <label for="emailCreateAccount">Email: </label><br>
-        <input type="email" name="email" id="emailCreateAccount" required>
+        <input type="email" name="email" id="emailCreateAccount" ngModel required>
       </div>
 
       <div class="form-example">
         <label for="prenom">Prenom: </label><br>
-        <input type="text" name="prenom" id="prenom" required>
+        <input type="text" name="prenom" id="prenom" ngModel required>
       </div>
 
       <div class="form-example">
         <label for="nom">Nom: </label><br>
-        <input type="text" name="nom" id="nom" required>
+        <input type="text" name="nom" id="nom" ngModel required>
       </div>
 
       <div class="form-example">
         <label for="passwordCreateAccount">Password: </label><br>
-        <input type="password" name="password" id="passwordCreateAccount" required>
+        <input type="password" name="password" id="passwordCreateAccount" ngModel required>
       </div>
 
       <div class="form-example">

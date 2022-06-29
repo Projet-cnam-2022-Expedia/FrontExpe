@@ -9,7 +9,7 @@ import {UserComponent} from "./user/user.component";
 import {LoginComponent} from "./login/login.component";
 import {User_reservationComponent} from "./user_reservation/user_reservation.component";
 
-const routes: Routes = [
+ const routes: Routes = [
   {
     path:'',
     redirectTo: '/home',
@@ -48,6 +48,8 @@ const routes: Routes = [
     component: User_reservationComponent
   }
 ];
+
+ export const router = RouterModule.forRoot(routes)
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
