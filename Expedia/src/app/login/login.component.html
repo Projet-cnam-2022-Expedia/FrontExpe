@@ -3,18 +3,18 @@
     <div class="alert alert-danger" role="alert">{{message}}</div>
     <h1>Connectez-vous</h1>
     <form #LoginForm="ngForm" method="get" class="form-example" (ngSubmit)="login(LoginForm)">
-      <div class="form-example">
-        <label for="emailLogin">Email: </label><br>
-        <input type="email" name="email" id="emailLogin" ngModel required>
+      <div class="mat-form-field">
+        <label for="emailLogin" class="mat-label">Email: </label><br>
+        <input class="matInput" placeholder="arobase@pointcom.com" type="email" name="email" id="emailLogin" ngModel required>
+      </div>
+
+      <div class="mat-form-field">
+        <label for="passwordLogin" class="mat-label">Password: </label><br>
+        <input class="matInput" type="password" placeholder="69420" name="password" id="passwordLogin" ngModel required>
       </div>
 
       <div class="form-example">
-        <label for="passwordLogin">Password: </label><br>
-        <input type="password" name="password" id="passwordLogin" ngModel required>
-      </div>
-
-      <div class="form-example">
-        <input type="submit" value="Login">
+        <input class="mat-raised-button" type="submit" value="Login">
       </div>
     </form>
   </div>
@@ -25,28 +25,28 @@
     <h1>Créez un compte</h1>
     <div class="alert alert-danger" role="alert">{{message2}}</div>
     <form #signupForm="ngForm" method="get" class="form-example" (ngSubmit)="signUp(signupForm)">
-      <div class="form-example">
-        <label for="emailCreateAccount">Email: </label><br>
-        <input type="email" name="email" id="emailCreateAccount" ngModel required>
+      <div class="mat-form-field">
+        <label for="emailCreateAccount" class="mat-label">Email: </label><br>
+        <input class="matInput" type="email" placeholder="arobase@pointcom.com" name="email" id="emailCreateAccount" ngModel required>
       </div>
 
-      <div class="form-example">
-        <label for="prenom">Prenom: </label><br>
-        <input type="text" name="prenom" id="prenom" ngModel required>
+      <div class="mat-form-field">
+        <label for="prenom" class="mat-label">Prenom: </label><br>
+        <input class="matInput" type="text" placeholder="Palomon" name="prenom" id="prenom" ngModel required>
       </div>
 
-      <div class="form-example">
+      <div class="mat-form-field">
         <label for="nom">Nom: </label><br>
-        <input type="text" name="nom" id="nom" ngModel required>
+        <input class="matInput" type="text" placeholder="Arobase" name="nom" id="nom" ngModel required>
       </div>
 
-      <div class="form-example">
+      <div class="mat-form-field">
         <label for="passwordCreateAccount">Password: </label><br>
-        <input type="password" name="password" id="passwordCreateAccount" ngModel required>
+        <input class="matInput" type="password" placeholder="0000" name="password" id="passwordCreateAccount" ngModel required>
       </div>
 
       <div class="form-example">
-        <input type="submit" value="Login">
+        <input class="mat-raised-button" type="submit" value="Login">
       </div>
     </form>
   </div>
