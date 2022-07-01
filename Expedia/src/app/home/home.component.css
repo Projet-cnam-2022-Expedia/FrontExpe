@@ -1,0 +1,10 @@
+div {
+  display: table-cell;
+  padding: 10px;
+}
+
+img {
+  max-height: 200px;
+  border-radius: 8px;
+  max-width: 100%;
+}

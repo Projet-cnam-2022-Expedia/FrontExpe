@@ -40,9 +40,5 @@ export class HotelsComponent implements OnInit {
       }
     );
   }
-
-  filtre() {
-      this.getHotels();
-      this.data = this.data.includes('this.hotelsFilter.value.nom');
-  }
+  searchText: any;
 }

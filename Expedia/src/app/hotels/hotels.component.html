@@ -1,6 +1,9 @@
 <p>hotels works!</p>
-
-{{this.hotelsFilter.value.name}}
+<div class="form-group">
+  <div class="search-name">
+    <input class="form-control" type="text" name="search" placeholder=" SEARCH  " [(ngModel)]="searchText" />
+  </div>
+</div>
 <table mat-table [dataSource]="this.data" class="mat-elevation-z8">
   <ng-container matColumnDef="Nom">
     <th mat-header-cell *matHeaderCellDef> Nom </th>
