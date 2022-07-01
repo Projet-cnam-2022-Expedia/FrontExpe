@@ -5,12 +5,16 @@
   width: 100%;
   color: green;
   border-top: black solid 1px;
-  font: 500 20px/32px Roboto,"Helvetica Neue", sans-serif;
+  font: 500 10px/22px Roboto,"Helvetica Neue", sans-serif;
   display: flex;
 }
 
+.legal{
+  margin: 0 auto auto;
+}
+
 #legal_txt{
-  margin: 12px auto auto;
+  margin: 0 auto auto;
   text-align: center;
   color: #000a92;
 }
