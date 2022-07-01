@@ -1,6 +1,21 @@
-div {
+.image {
   display: table-cell;
   padding: 10px;
+}
+
+.centered{
+  margin: auto;
+  width: 60%;
+  padding: 10px;
+  text-align: center;
+  font: 500 30px/42px Roboto,"Helvetica Neue", sans-serif;
+  color: #000a92;
+}
+
+img {
+  max-height: 200px;
+  border-radius: 8px;
+  max-width: 100%;
 }
 
 img {
